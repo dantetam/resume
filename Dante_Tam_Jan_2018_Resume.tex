@@ -1,0 +1,234 @@
+\documentclass[letterpaper,12pt,oneside]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TYPESETTING OPTIONS.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\TypesetInNonStopMode}{1}
+\newcommand{\TypesetInDraftMode}{0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{CV-Preamble.tex}
+
+% CV Info
+\newcommand{\CVAuthor}{Dante Tam}
+\newcommand{\CVWebpage}{https://dantetam.github.io}
+
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault} 
+\usepackage[T1]{fontenc}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+pdfpagemode={},
+bookmarks=true,
+unicode=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+\addtolength{\oddsidemargin}{-.25in}
+\addtolength{\evensidemargin}{-.25in}
+\addtolength{\textwidth}{.5in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\pagenumbering{gobble}
+\thispagestyle{empty}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\title{\CVAuthor}
+
+\begin{subtitle}
+{San Francisco, California, 94121, USA}
+\par
+%\href{mailto:datam@berkeley.edu}
+\end{subtitle}
+
+\begin{center}
+{\Large datam@berkeley.edu \qquad dantetam.github.io \qquad github.com/dantetam}
+\end{center}
+
+\begin{body}
+
+%%%%%%%%%%%%%
+%% SUMMARY %%
+%%%%%%%%%%%%%
+
+\section
+{Summary}
+{Summary}
+{PDF:Summary}
+
+{\textbf{Strong history of SWE/software architecture, with applications in ML, NLP, data science, built on theoretical foundation in ML, stats, linear algebra at UC Berkeley}}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\section
+{Education}
+{Education}
+{PDF:Education}
+
+{\textbf{University of California, Berkeley}}
+
+\GapNoBreak
+\BulletItem
+BA, Computer Science
+\hfill
+\DatestampYMD{2015}{8}{15} --
+\DatestampYMD{2017}{12}{15}
+
+\GapNoBreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PROJECTS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Projects (Please ask!)}
+{Projects}
+{PDF:Projects}
+
+{\textbf{Stella}}, San Francisco, California
+\hfill
+\DatestampYMD{2016}{12}{15} -- \DatestampYMD{2017}{7}{15}
+\GapNoBreak
+\begin{detail}
+\SubBulletItem
+Conversational agent and personal assistant for research, administrative tasks, data analysis, etc.
+\SubBulletItem
+AI that uses \textbf{WordNet}, a language/word sense network, \textbf{NLP, and ML} algorithms for commands; 90-95\% valid. acc.
+\SubBulletItem
+Process hundreds of thousands of words of information and analyze for summary, sentiment, etc.
+\SubBulletItem
+Stella learns how language and grammars work through \textbf{CoreNLP}: parsing Twitter for topic-to-topic associations
+\SubBulletItem
+\textbf{TensorFlow — SVMs, CNNs, latent vector embeddings (word2vec)} for classification
+\SubBulletItem
+Interfaces with RESTful APIs (Google, Facebook, Wikipedia, etc.) to mine and process data
+\end{detail}
+
+{\textbf{Serenine}}, San Francisco, California
+\hfill
+\DatestampYMD{2016}{06}{15} -- \DatestampYMD{2016}{10}{15}
+\GapNoBreak
+\begin{detail}
+\SubBulletItem
+World-building strategy game for desktop and Android
+\SubBulletItem
+Produce real-time HD graphics (60fps, 1080p) on phones by interfacing with \textbf{OpenGL ES}
+\SubBulletItem
+Render hundreds of textured, shaded shapes, 3D models through efficient \newline \textbf{interleaved vertex buffers, multitexturing, and GLSL shaders}
+\SubBulletItem
+Hex tiles, diplomacy between players, AI players, randomized worlds,
+\SubBulletItem
+technology tree, AI competitors, turn-based play, other complex mechanics
+\SubBulletItem
+Studied and applied computational geometry in graphics pipeline for use in intensive 3D phone graphics
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Work Experience}
+{Work Experience}
+{PDF:Work Experience}
+
+{\textbf{IndyBo}}, San Francisco, California
+\GapNoBreak
+\BulletItem
+Game Designer
+\hfill
+\DatestampYMD{2015}{05}{15} --
+\DatestampYMD{2015}{08}{15}
+\begin{detail}
+\SubBulletItem
+Developed an intuitive visual programming language for use in modular robots
+\newline
+as well as fun, educational games to leverage visual programming written in Unity with C\#
+\SubBulletItem
+Introduce kids early to CS concepts and programming such as loops and conditionals
+\end{detail}
+
+
+{\textbf{Roblox}}, San Mateo, California
+\BulletItem
+ROBLOX Studio Intern
+\hfill
+\DatestampYMD{2013}{06}{13} --
+\DatestampYMD{2013}{08}{13}
+\begin{detail}
+\SubBulletItem
+Developed on the platform, a \textbf{3D sandbox and programming environment}, used by millions of developers
+\SubBulletItem
+Worked on ROBLOX Studio, a game development tool, and pushed 3D models for use on the website
+\SubBulletItem
+Developed my own roguelike (2D, turn-based, procedurally generated) and other projects in the platform
+\newline 
+Learned fundamentals of cooperative, intensive SWE, and how to architect massive projects 
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% COURSES %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Coursework \newline (ML,AI,Graphics/CV, and SWE)}
+{Coursework}
+{PDF:Coursework}
+
+\BulletItem 
+\textbf{Data Structures, Algorithms}
+\BulletItem
+Artificial Intelligence, \textbf{Machine Learning}
+\BulletItem
+Natural Language Processing, Data Science
+\BulletItem
+Computer Graphics, Computational Photography
+\BulletItem 
+Multivariable Calculus, Linear Algebra, Discrete Math
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TECH SUMMARY %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Technology Summary \newline Always willing to learn!}
+{Technology Summary}
+{PDF:Technology Summary}
+
+\BulletItem 
+\textbf{Java (Android, LWJGL Graphics); Python: TensorFlow, numpy, sci. computing;}, Lua (Game Scripting), \newline 
+C\# (Unity), Ruby (Ruby on Rails and Sinatra), Git
+\BulletItem 
+d3.js (Data Visualization), MapReduce/Parallelization (Hadoop, Spark), Front End Web Stack
+
+\end{body}
+
+\end{document}
